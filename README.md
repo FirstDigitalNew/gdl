@@ -20,7 +20,7 @@
 <br/>
 
 
-## Descriptions
+## Description
 
 Download a large file from Google Drive.  
 If you use curl/wget, it fails with a large file because of
