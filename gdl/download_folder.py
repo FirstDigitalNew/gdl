@@ -16,7 +16,7 @@ from .download import _get_session
 from .download import download
 from .download import indent
 
-MAX_NUMBER_FILES = 50
+MAX_NUMBER_FILES = 100
 
 
 class _GoogleDriveFile(object):

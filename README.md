@@ -81,10 +81,6 @@ $ cat ip.json
   "origin": "126.169.213.247"
 }
 
-$ # write stdout and pipe to extract
-$ gdl https://github.com/wkentaro/gdl/archive/refs/tags/v4.0.0.tar.gz -O - --quiet | tar zxvf -
-$ ls gdl-4.0.0/
-gdl  github2pypi  LICENSE  MANIFEST.in  pyproject.toml  README.md  setup.cfg  setup.py  tests
 ```
 
 ### From Python
@@ -121,4 +117,4 @@ gdl.download_folder(id=id, quiet=True, use_cookies=False)
 
 ## License
 
-See [LICENSE](LICENSE).
+- Total credit goes to https://github.com/wkentaro/gdown

@@ -65,7 +65,7 @@ def _get_session(use_cookies, return_cookies_file=False):
     sess = requests.session()
 
     # Load cookies
-    cache_dir = osp.join(home, ".cache", "gdown")
+    cache_dir = osp.join(home, ".cache", "gdl")
     if not osp.exists(cache_dir):
         os.makedirs(cache_dir)
     cookies_file = osp.join(cache_dir, "cookies.json")
@@ -234,7 +234,7 @@ def download(
         else:
             resume = False
             # mkstemp is preferred, but does not work on Windows
-            # https://github.com/wkentaro/gdown/issues/153
+            # https://github.com/wkentaro/gdl/issues/153
             tmp_file = tempfile.mktemp(
                 suffix=tempfile.template,
                 prefix=osp.basename(output),
