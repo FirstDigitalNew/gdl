@@ -1,23 +1,4 @@
-<h1 align="center">
-  gdl
-</h1>
-
-<h4 align="center">
-  Download a large file from Google Drive.
-</h4>
-
-<div align="center">
-  <a href="https://pypi.python.org/pypi/gdl"><img src="https://img.shields.io/pypi/v/gdl.svg"></a>
-  <a href="https://pypi.org/project/gdl"><img src="https://img.shields.io/pypi/pyversions/gdl.svg"></a>
-  <a href="https://github.com/wkentaro/gdl/actions"><img src="https://github.com/wkentaro/gdl/workflows/ci/badge.svg"></a>
-</div>
-
-<div align="center">
-  <img src=".readme/cli.png" width="90%">
-  <img src=".readme/python.png" width="90%">
-</div>
-
-<br/>
+## Google Drive Downloader
 
 
 ## Description
