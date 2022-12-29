@@ -4,19 +4,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-def get_version():
-    filename = "gdl/__init__.py"
-    with open(filename) as f:
-        match = re.search(
-            r"""^__version__ = ['"]([^'"]*)['"]""", f.read(), re.M
-        )
-    if not match:
-        raise RuntimeError("{} doesn't contain __version__".format(filename))
-    version = match.groups()[0]
-    return version
-
-
-version = get_version()
+version = "2.0.0"
 
 
 def get_long_description():
@@ -63,5 +51,5 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: Implementation :: CPython",
     ],
-    entry_points={"console_scripts": ["gdown=gdown.cli:main"]},
+    entry_points={"console_scripts": ["gdl=gdl.cli:main"]},
 )
