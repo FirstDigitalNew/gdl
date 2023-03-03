@@ -177,19 +177,19 @@ def download(
             break
 
         # Need to redirect with confirmation
-        try:
-            url = get_url_from_gdrive_confirmation(res.text)
-        except RuntimeError as e:
-            print("Access denied with the following error:")
-            error = "\n".join(textwrap.wrap(str(e)))
-            error = indent(error, "\t")
-            print("\n", error, "\n", file=sys.stderr)
-            print(
-                "You may still be able to access the file from the browser:",
-                file=sys.stderr,
-            )
-            print("\n\t", url_origin, "\n", file=sys.stderr)
-            return
+        #try:
+        #    url = get_url_from_gdrive_confirmation(res.text)
+        #except RuntimeError as e:
+        #    print("Access denied with the following error:")
+        #    error = "\n".join(textwrap.wrap(str(e)))
+        #    error = indent(error, "\t")
+        #    print("\n", error, "\n", file=sys.stderr)
+        #    print(
+        #        "You may still be able to access the file from the browser:",
+        #        file=sys.stderr,
+        #    )
+        #    print("\n\t", url_origin, "\n", file=sys.stderr)
+        #    return
 
     if gdrive_file_id and is_gdrive_download_link:
         content_disposition = six.moves.urllib_parse.unquote(
