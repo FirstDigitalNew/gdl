@@ -176,6 +176,9 @@ def download(
         if not (gdrive_file_id and is_gdrive_download_link):
             break
 
+        else:
+            print("Unable to find webpage")
+            return 
         # Need to redirect with confirmation
         #try:
         #    url = get_url_from_gdrive_confirmation(res.text)
